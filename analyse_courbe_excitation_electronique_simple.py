@@ -1,7 +1,8 @@
 """
 ------------------------------------------------------------------------------
 
-Mettres vois import ici
+Copy pastez le code de l'analyse légèrepour un pic ici. À partir des résultat
+de l'analyse légère, compléter le code pour faire l'analyse complète
 
 _____________________________________________________________________________
 """
@@ -9,51 +10,19 @@ _____________________________________________________________________________
 
 
 
-"""
-------------------------------------------------------------------------------
-
-Lire le fichier des résultats et transformer les valeurs en un array numpy
-
-_____________________________________________________________________________
-"""
-
-
 
 """
 ------------------------------------------------------------------------------
 
-Retirer les valeurs qui se trouvent à l'extérieur de l'activation du générateur de rampe
+Faire une régression gaussienne sur chacun des pics et calculer le potentiel de contact.
+Pour arrondir les valeurs selons leur incertitudes, regardez la docimentation de sigfig.
 
-_____________________________________________________________________________
-"""
+Les résultats devraient être similaire à 
+Pic 1: Moyenne: 2.04 ± 0.02 STD: -0.44 ± 0.02 Amplitude: 0.083 ± 0.004
+Pic 2: Moyenne: 6.91 ± 0.01 STD: 0.82 ± 0.01 Amplitude: 0.459 ± 0.006
+Pic 3: Moyenne: 12.00 ± 0.01 STD: 1.09 ± 0.01 Amplitude: 0.96 ± 0.01
+Pic 4: Moyenne: 17.14 ± 0.01 STD: 1.26 ± 0.01 Amplitude: 1.365 ± 0.007
 
-
-
-"""
-------------------------------------------------------------------------------
-
-Calculer la pente de la tension du générateur de rampe et son incertitude.
-Afficher cette valeur et son incertitude, puis convertir les valeurs de temps
-en valeurs de tension
-
-_____________________________________________________________________________
-"""
-
-
-
-"""
-------------------------------------------------------------------------------
-
-Déterminer l'emplacement approximatif des maximums
-
-_____________________________________________________________________________
-"""
-
-
-"""
-------------------------------------------------------------------------------
-
-Faire une régression gaussienne sur chacun des pics et calculer le potentiel de contact
 
 _____________________________________________________________________________
 """
@@ -66,5 +35,6 @@ _____________________________________________________________________________
 Faire un graphique digne d'un article qui contient l'ensemble des données de courants en fonction de la tension,
 les emplacements approximatifs des maximums et les différents fits gaussiens effectués.
 
+Ça devrait ressembler à la figure exemple_de_fichiers/exemple_graphique_f_et_h
 _____________________________________________________________________________
 """

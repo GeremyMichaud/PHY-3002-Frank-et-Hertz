@@ -49,7 +49,6 @@ def crop_pour_conserver_que_la_partie_avec_rampe(valeurs: np.array, indice_colon
     deltats_V = valeurs[2:, indice_colonne_rampe] - valeurs[:-2, indice_colonne_rampe]
     outside_zero_treshold = np.logical_or((deltats_V > zero_threshold), deltats_V < -zero_threshold)
     within_infinity_threshold = np.logical_and(deltats_V > -infinity_threshold, deltats_V < infinity_threshold)
-
     variation_non_nulle, = np.where(np.logical_and(outside_zero_treshold, within_infinity_threshold))
     index_debut = variation_non_nulle.min()
     index_fin = variation_non_nulle.max()

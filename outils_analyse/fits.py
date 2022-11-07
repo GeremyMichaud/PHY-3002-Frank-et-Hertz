@@ -79,13 +79,14 @@ def gaussian_fit(x: np.array, y: np.array, a_estimation, mu_estimation, sigma_es
     """
     Cette fonctions applique un fit gaussien sur les valeurs x et y. Attention, cette méthode est
     très sensibles aux valeurs estimés de l'amplitude, de la moyenne et de l'écart-type de la gaussienne.
-    Cette méthode retourne les paramètres optimaux du fit gaussien.
+    Cette méthode retourne les paramètres optimaux du fit gaussien. Pour avoir qu'un seul pic à la fois,
+    appliquer cette fonction sur des régions de l'array complet (en utilisant du slicing [:]).
 
-    :param x: Valeurs indépendantes
-    :param y: Valeurs dépendantes
-    :param a_estimation: Estimation de l'amplitude
-    :param mu_estimation: Estimation de la moyenne
-    :param sigma_estimation: Estimation de l'écart-type
+    :param x: Valeurs indépendantes (attention d'utiliser des valeurs qui ne contiennent qu'un seul pic)
+    :param y: Valeurs dépendantes (attention d'utiliser des valeurs qui ne contiennent qu'un seul pic)
+    :param a_estimation: Estimation de l'amplitude (devrait être l'amplitude associé à l'estimation préalable du pic valeurs[estimation du pic])
+    :param mu_estimation: Estimation de la moyenne (devrait être l'index associé à l'estimation préalable du pic)
+    :param sigma_estimation: Estimation de l'écart-type (vous pouvez souvent considérer une variance de 1)
 
     :return: Un tuple dont le premier élément est un array de trois éléments [amplitude optimale, moyenne optimale,
              ecart-type optimal] tandis que le deuxième un un array de trois éléments ayants les incertitudes associés.

@@ -40,7 +40,11 @@ def crop_pour_conserver_que_la_partie_avec_rampe(valeurs: np.array, indice_colon
     :param valeurs: array numpy contenant au moins la colonne du temps et la colonne du potentiel de la rampe
     :param indice_colonne_rampe: indice associé à la colonne du potentiel de la rampe dans l'array numpy
     :param zero_threshold: valeurs limites supérieurs pour considérer un gradient comme étant nul
+                           cette valeur devrait être bien plus petite que la pente qu'on s'attend à calculer.
+                           Dans le cadre de ce laboratoire, ça devrait être en dessous de 0.1
     :param infinity_threshold: valeurs limites inférieurs pour considérer un gradient comme étant infini
+                            cette valeur devrait être bien plus grande que la pente qu'on s'attend à calculer.
+                           Dans le cadre de ce laboratoire, ça devrait être suprieur  ou égal à de 0.1
 
     :return:
     """

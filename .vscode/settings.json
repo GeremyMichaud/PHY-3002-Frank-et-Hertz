@@ -5,6 +5,7 @@
         "gaussian",
         "leger",
         "linestyle",
+        "linewidth",
         "minorticks",
         "pico",
         "xlabel",

@@ -31,10 +31,6 @@ Pour utiliser ce code, suivez ces étapes :
 
 - Gérémy Michaud (https://github.com/GeremyMichaud) - Étudiant en physique à l'Université Laval.
 
-## Licence
-
-Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
-
 ## Remerciements
 
 Je tiens à remercier le corps professoral de l'Université Laval pour leur soutien dans la réalisation de cette expérience.

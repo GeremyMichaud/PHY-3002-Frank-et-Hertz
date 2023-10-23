@@ -1,5 +1,7 @@
 {
     "cSpell.words": [
+        "ecart",
+        "ecarts",
         "fontsize",
         "gaus",
         "gaussian",
@@ -8,6 +10,7 @@
         "linewidth",
         "minorticks",
         "pico",
+        "sigfig",
         "xlabel",
         "ylabel"
     ]

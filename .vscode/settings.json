@@ -5,6 +5,7 @@
         "fontsize",
         "gaus",
         "gaussian",
+        "ipywidgets",
         "leger",
         "linestyle",
         "linewidth",
